@@ -2,6 +2,10 @@
 
 eventsApp.controller('EventController',
     function EventController ($scope) {
+        $scope.snippet = '<span style="color:red">hi there</span>';
+        $scope.boolValue = false;
+        $scope.myClass = {color:'red'};
+        $scope.buttonDisabled = true;
         $scope.event = {
             name: 'Angular',
             date: '1/1/2016',
@@ -16,7 +20,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Directives Masterclass',
                     creatorName: 'Bob Smith',
-                    duration: '1 hr',
+                    duration: 1,
                     level: 'Advanced',
                     abstract: 'In this session, you will learn the ins and outs of directives',
                     upVoteCount: 0
@@ -24,7 +28,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Scopes for fun and profit',
                     creatorName: 'John Doe',
-                    duration: '30mins',
+                    duration: 2,
                     level: 'Beginner',
                     abstract: 'This session will take a closer look at scopes.',
                     upVoteCount: 0
@@ -32,7 +36,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Well behaved controllers',
                     creatorName: 'Mike Jones',
-                    duration: '60mins',
+                    duration: 3,
                     level: 'Beginner',
                     abstract: 'learn how to balance controllers',
                     upVoteCount: 0
